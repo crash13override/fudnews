@@ -1,0 +1,59 @@
+// ---------------------------------------------------------===
+// Animation
+// ---------------------------------------------------------===
+
+.loading {
+    width: 106px;
+    height: 129px;
+}
+
+.right-wall,
+.left-wall {
+    height: 108px;
+}
+
+.left-wall {
+    animation:left-wall 1.5s infinite;
+}
+
+.right-wall {
+    animation:right-wall 1.5s infinite;
+}
+
+.ball {
+    animation:bounce_ball 1.5s linear infinite;
+}
+
+@keyframes left-wall{
+    0% {transform: translateY(0);}
+    25%{transform: translateY(80px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes right-wall{
+    0% {transform: translateY(80px);}
+    50%{transform: translateY(0);}
+    100%{transform: translateY(80px);}
+}
+
+@keyframes  bounce_ball{
+    0% {transform: translate(29px,55px);}
+    25% {transform: translate(-29px,40px);}
+    50% {transform: translate(29px,60px);}
+    75% {transform: translate(-29px,40px);}
+    100% {transform: translate(29px,55px);}
+}
+
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.loadingsmall {
+    animation: rotation 2s infinite linear;
+}

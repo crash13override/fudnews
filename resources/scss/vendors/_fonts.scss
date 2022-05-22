@@ -1,0 +1,20 @@
+// ---------------------------------------------------------===
+// Fontface
+// ---------------------------------------------------------===
+
+@font-face {
+  font-family: 'name_smile';
+  src: url('/fonts/smile/name_smile-webfont.woff2') format('woff2'),
+       url('/fonts/smile/name_smile-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bradley_hand';
+  src: url('/fonts/bradley/bradhitc-webfont.woff2') format('woff2'),
+       url('/fonts/bradley/bradhitc-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
